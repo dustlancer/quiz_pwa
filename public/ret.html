@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="theme-color" content="#222831">
+  <link rel='manifest' href='./manifest.json'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="resources/css/reset.css">
+  <link rel="stylesheet" href="resources/css/tailwind.min.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/switchery/switchery.css" />
+
+  <script>
+    // Registering our Service worker
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js', { scope: './' })
+    }
+  </script>
+</head>
+<body>
+  <div id="wrapper" class="app flex flex-col h-screen">
+    <div class="header flex flex-row items-center justify-between font-bold text-white text-3xl p-5">
+      <img src="./resources/images/profile-icon.png" class="h-16 p-3 glassy" alt="profile">
+      <img src="./resources/images/info-icon.png" class="h-16 p-3 glassy" alt="profile">
+    </div>
+    
+    <div class="text-white m-3 font-medium text-2xl mb-0">Новые викторины</div>
+    <div class="cards-carousel flex flex-row overflow-x-auto py-5">
+      <div class="card glassy relative m-3 mx-2">
+        <img src="./resources/images/sport1.jpg" class="card-image" alt="">
+        <div class="card-text">Математические задачи</div>
+      </div>
+      <div class="card glassy relative m-3 mx-2">
+        <img src="./resources/images/sport1.jpg" class="card-image" alt="">
+        <div class="card-text">Математические задачи</div>
+      </div>
+      <div class="card glassy relative m-3 mx-2">
+        <img src="./resources/images/sport1.jpg" class="card-image" alt="">
+        <div class="card-text">Математические задачи</div>
+      </div>
+      
+      
+    </div>
+    <!--  -->
+  </div>
+  <script src="resources/js/switchery/switchery.js"></script>
+  <script src="resources/js/main.js"></script>
+</body>

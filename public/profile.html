@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="theme-color" content="#222831">
+  <link rel='manifest' href='./manifest.json'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="resources/css/reset.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/switchery/switchery.css" />
+
+</head>
+<body>
+  <div id="app" class="app flex flex-col h-screen">
+    <div class="top-bar flex flex-row items-center justify-center font-bold text-white bg-green-400 text-3xl p-5">
+      Квизы
+    </div>
+    <!--  -->
+    <div class="mx-3 h-full flex flex-col items-center justify-center border-b-1 border-white text-white">
+        <div class="glassy flex flex-row items-center justify-between w-full p-3 px-5">
+            <p id="quiz_name" class="font-medium ">Математика</p>
+            <p>сложность</p>
+        </div>
+    </div>
+
+  </div>
+  <script src="resources/js/switchery/switchery.js"></script>
+  <script src="resources/js/main.js"></script>
+</body>
